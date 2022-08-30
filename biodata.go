@@ -22,7 +22,7 @@ type Student struct {
 // create a func based on student id from struct
 func dataStudent(i int) {
 	// read json file into struct
-	file, err := ioutil.ReadFile("src/assignment1/students.json")
+	file, err := ioutil.ReadFile("assignment1/students.json")
 	if err != nil {
 		fmt.Println(err)
 	}
