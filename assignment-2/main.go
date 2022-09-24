@@ -39,7 +39,7 @@ func main() {
 
 	router.GET("/orders", inDB.GetOrders)
 	router.POST("/orders", inDB.CreateOrder)
-	router.GET("/orders/id", inDB.GetOrder)
+	router.GET("/order/:id", inDB.GetOrder)
 	router.PUT("/orders/:id", inDB.UpdateOrder)
 	router.DELETE("/orders/:id", inDB.DeleteOrder)
 	router.Run(serverAddress)
